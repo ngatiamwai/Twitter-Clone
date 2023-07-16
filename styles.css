@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header{
+    background-color: rgb(248, 248, 248);
+}
+.nav1{
+    height: 10vh;
+    background-color: rgb(41, 134, 221);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search{
+    display: flex;
+    gap: 5vh;
+    padding-right: 25vh;
+    align-items: center;
+}
+input{
+    height: 5vh;
+    border-radius: 1vh;
+}
+.pic img{
+    border-radius: 50%;
+    height: 20vh;
+    width: 10vw;
+    margin-top: 60%;
+    margin-left: 3vh;
+}
+.nav2{
+    margin-top: 13vh;
+    margin-left: 3vh;
+}
+.lower{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: center;
+}
+.posts{
+    margin-top: 3vh;
+    display: grid;
+    grid-template-columns: 23% 70%;
+}
+.posts:hover{
+    cursor: pointer;
+}
+.posts2{
+    display: flex;
+    gap: 3vh;
+}
+.post-pic img{
+    height: 15vh;
+    width: 8vw;
+}
+.reactions {
+    display: flex;
+    justify-content: space-between;
+}
+.post-comments{
+    margin-top: 3vh;
+    display: grid;
+    grid-template-columns: 23% 70%;
+}
+.post-content{
+    margin-left: 3vh;
+}
