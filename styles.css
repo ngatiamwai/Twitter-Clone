@@ -65,7 +65,9 @@ input{
     margin-top: 3vh;
     display: grid;
     grid-template-columns: 23% 70%;
+    grid-template-rows: repeat(10% 20%,) ;
 }
 .post-content{
     margin-left: 3vh;
 }
+
