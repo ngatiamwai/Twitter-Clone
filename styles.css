@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+img{
+    /* width: 100%;
+    height: 100%; */
+}
 .main{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -44,8 +48,15 @@ input{
 .posts{
     margin-top: 3vh;
     display: grid;
-    grid-template-columns: 23% 70%;
+    /* grid-template-columns: 23% 70%; */
 }
+.post{
+    display: flex;
+}
+.comment{
+    display: flex;
+}
+
 .posts:hover{
     cursor: pointer;
 }
@@ -54,7 +65,7 @@ input{
     gap: 3vh;
 }
 .post-pic img{
-    height: 15vh;
+    /* height: 10vh; */
     width: 8vw;
 }
 .reactions {
@@ -63,11 +74,15 @@ input{
 }
 .post-comments{
     margin-top: 3vh;
-    display: grid;
-    grid-template-columns: 23% 70%;
-    grid-template-rows: repeat(10% 20%,) ;
+    /* display: grid; */
+    /* grid-template-columns: 23% 70%; */
+    /* grid-template-rows: repeat(1, 1fr); */
 }
 .post-content{
     margin-left: 3vh;
+    height: fit-content;
+}
+.profile-img{
+    width: 5rem !important;
 }
 
