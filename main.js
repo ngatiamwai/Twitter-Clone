@@ -1,10 +1,10 @@
-const postId = ""; // Replace with the desired user ID
-
 const header = document.getElementsByClassName("header")[0];
-const postsContainer = document.getElementsByClassName("posts")[0];
-const commentsContainer = document.getElementsByClassName("post-comments")[0];
+const posts_container = document.getElementsByClassName("posts")[0];
+const comment_container = document.getElementsByClassName("post-comments")[0];
+const select_container = document.getElementById("select-user");
 
 const userId = "1";
+const postId = "";
 
 fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
     .then((response) => response.json())
@@ -17,7 +17,8 @@ fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
         <h2 style="color: azure;">Twitter Clone</h2>
         <div class="search">
           <p style="color: azure;">Search</p>
-          <input type="text" placeholder="Search">
+          <select name="" id="select-user">
+          <img src="/Images/dropdown.png" alt="">Search</select>
         </div>
       </div>
       <div class="nav2">
@@ -65,16 +66,16 @@ fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
       `;
                 });
 
-                postsContainer.innerHTML = postsHtml;
+                posts_container.innerHTML = postsHtml;
             })
             .catch((error) => {
-                // Handle any errors
-                console.error("Error:", error);
+
+                console.error("Cannot pick user:", error);
             });
     })
     .catch((error) => {
-        // Handle any errors
-        console.error("Error:", error);
+
+        console.error("Cannot pick user posts:", error);
     });
 
 const Comments = {
@@ -114,11 +115,12 @@ const Comments = {
                         `;
                 });
 
-                commentsContainer.innerHTML = commentsHtml;
+                comment_container.innerHTML = commentsHtml;
             })
             .catch((error) => {
-                // Handle any errors
-                console.error("Error:", error);
+
+                console.error("cannot pick comments of the post:", error);
             });
     },
 };
+
