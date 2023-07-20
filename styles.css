@@ -98,3 +98,12 @@ input{
     margin-left: 3vh;
     margin-right: 3vh;
 }
+@media screen and (max-width:800px) {
+    .pic img{
+        height: 20vh;
+        width: 20vw;
+    }
+    .lower{
+        display: grid;
+    }
+}
